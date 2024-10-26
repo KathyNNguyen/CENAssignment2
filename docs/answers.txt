@@ -1,0 +1,74 @@
+Git Lab Tutorials were done 10/24/2024
+The GitHub has been created for many months, but the actual repository was forked
+and edited from 10/25-10/26
+
+1. PS C:\Users\Kathy\Downloads\CEN4020\CENAssignment2> git push origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.01 KiB | 517.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.  
+To https://github.com/KathyNNguyen/CENAssignment2.git
+   01bbb2d..8348dbe  master -> master
+
+2. I used git rev-list --count HEAD to find the commits done to the repository,
+though this counts commits that goes up to the head.
+
+3. PS C:\Users\Kathy\Downloads\CEN4020\CENAssignment2> git log -1 --format=%cd -- \Users\Kathy\Downloads\CEN4020\CENAssignment2\README.md
+Sat Oct 26 00:44:29 2024 -0400
+Using the command line git log -1 --format=%cd -- \Users\Kathy\Downloads\CEN4020\CENAssignment2\README.md,
+the following output above displays the date README.md was last modified 
+
+4. Branches are used in a Git repository because:
+- a team can collaborate without worrying about overwriting their peers or affecting
+other's changes.
+- it allows the master branch to always be in a working standpoint while the branch
+is utilized to create and test features before merging with the main repository
+
+5. The git log displays snapshots of the project history. i.e cannot check status conditions
+of what I am doing right now until I commit to the repository
+git status displays the condition of the working directory. 
+
+6. git log -- \Users\Kathy\Downloads\CEN4020\CENAssignment2\Vehicle.h
+Output:
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 11 16:58:59 2019 -0400
+
+    -> Declared the trivial destructors for all classes
+    -> Fully formatted toString methods for all classes
+    -> Added test cases in the main method for testing the implementations
+    -> Added validation on value for engine sizes in the  Car class   
+
+7. git log --grep="file"
+Output:
+commit 5cbb329b45a99d1d598e7e4bce082ed68392aa27
+Author: KathyNNguyen <kathynthi@outlook.com>
+Date:   Sat Oct 26 04:58:15 2024 -0400
+
+    created docs folder and new file status.txt
+
+commit 01bbb2dd2e784c30d8a5dad247f03ee1a315f78e
+Author: KathyNNguyen <kathynthi@outlook.com>
+Date:   Sat Oct 26 04:51:08 2024 -0400
+
+8. in the context of object-oriented programming,
+i. inheritance allows us to inherit methods and attributes
+of another class and reusing this between classes
+ii. polymorphism allows us to have something that can be
+displayed in multiple forms or having different meanings
+iii. encapsulation secures and hides data by restricting users from
+seeing the methods and attributes of the class
+
+9.
+In a Dictator Lieutenants workflow, the developer pushes changes
+to the assigned lieutenant repository. On the other hadn, with a
+integration manager workflow, the developer makes pulls and
+pushes to his own repository
+
+10. A team of 100 developers would benefit more from a DL workflow
+more than a centralized workflow because there are more steps in place
+for commits to cause a bug or error in the main repository. the tasks are
+also delegated accross multiple people versus one manager in a centralized
+workflow, allowing there to have multiple eyes on code review.

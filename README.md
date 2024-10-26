@@ -1,2 +1,2 @@
 Kathy Nguyen
-kn20@fsu.edu
+knn20@fsu.edu
